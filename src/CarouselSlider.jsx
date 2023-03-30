@@ -7,9 +7,9 @@ import { imgs } from './data';
 const ImageCarousel = () => {
   const [data] = useState(imgs)
   return (
-    <CCarousel controls interval={1000} >
+    <CCarousel controls interval={1000} pause="false">
       {data.map((imgCarousel) => (
-  <CCarouselItem key={imgCarousel.id} pause="false">
+  <CCarouselItem key={imgCarousel.id}>
     <CImage
       className="carousel__images"
       src={`${imgCarousel.img}`}
